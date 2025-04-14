@@ -1,0 +1,4 @@
+[app]
+    name = "jaimead7-home-assistant"
+    version = "0.0.1"
+    loggingLevel = "Debug"  # [Debug, Info, Warning, Error, Critical]
