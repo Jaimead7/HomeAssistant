@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu de aplicaciones</title>
+        <link rel="stylesheet" href="{% static 'menu/menuStyle.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Aplicaciones</h1> 
+            <div class="apps-menu">
+                {% if appsList %}
+                    {% for app in appsList %}
+                        <a href= "{{ app.url }}" class="app-container">
+                            <span>{{ app.name }}</span>
+                        </a>
+                    {% endfor %}
+                {% else %}
+                    <p>No hay apps disponibles</p>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>
