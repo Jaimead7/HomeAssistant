@@ -32,6 +32,7 @@ ALLOWED_HOSTS: list = []
 # Application definition
 
 INSTALLED_APPS: list[str] = [
+    'menu.apps.MenuConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
