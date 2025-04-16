@@ -33,6 +33,8 @@ ALLOWED_HOSTS: list = []
 
 INSTALLED_APPS: list[str] = [
     'menu.apps.MenuConfig',
+    'weather.apps.WeatherConfig',
+    'myCalendar.apps.MycalendarConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -103,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS: list[dict[str, str]] = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ES'
 
 TIME_ZONE = 'UTC'
 
@@ -116,6 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS: list[Path] = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

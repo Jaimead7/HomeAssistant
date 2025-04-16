@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import URLResolver, include, path
 
 urlpatterns: list[URLResolver] = [
-    path('menu/', include('menu.urls')),
+    path('', include('menu.urls')),
+    path('weather/', include('weather.urls')),
+    path('myCalendar/', include('myCalendar.urls')),
     path('admin/', admin.site.urls),
 ]

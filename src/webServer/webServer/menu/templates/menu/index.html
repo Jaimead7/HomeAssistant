@@ -5,15 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu de aplicaciones</title>
-        <link rel="stylesheet" href="{% static 'menu/menuStyle.css' %}">
+        <link rel="stylesheet" href="{% static 'globalStyles/menuStyle.css' %}">
     </head>
     <body>
-        <div class="container">
+        <div class="main-container">
             <h1>Aplicaciones</h1> 
-            <div class="apps-menu">
+            <div class="widgets-container">
                 {% if appsList %}
                     {% for app in appsList %}
-                        <a href= "{{ app.entryPoint }}" class="app-container">
+                        <a href= "{{ app.entryPoint }}" class="widget app-widget">
                             <span>{{ app.displayName }}</span>
                         </a>
                     {% endfor %}
