@@ -1,21 +1,12 @@
-from dataclasses import dataclass
-
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from .models import App
+
 
 def menu(request) -> HttpResponse:
-    @dataclass
-    class App:
-        name: str
-        url: str
-
-    appsList: list[App] = [
-        App('Weather', '/weather'),
-        App('Clock', '/clock'),
-    ]
     context: dict = {
-        'appsList': appsList
+        'appsList': App.objects.all()
     }
     return render(request, 'menu/index.html', context)
 

@@ -13,8 +13,8 @@
             <div class="apps-menu">
                 {% if appsList %}
                     {% for app in appsList %}
-                        <a href= "{{ app.url }}" class="app-container">
-                            <span>{{ app.name }}</span>
+                        <a href= "{{ app.entryPoint }}" class="app-container">
+                            <span>{{ app.displayName }}</span>
                         </a>
                     {% endfor %}
                 {% else %}
