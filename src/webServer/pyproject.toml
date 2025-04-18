@@ -1,7 +1,7 @@
 [project]
-    name = "jaimead7-home-assistant"
+    name = "jaimead7-home-assistant-web-server"
     version = "0.0.1"
-    description = "Home assistant project with learning purposes."
+    description = "A web server for the Home Assistant project."
     authors = [
         {name = "Jaimead7", email = "alvarez.diaz.jaime1@gmail.com"},
     ]
@@ -16,13 +16,14 @@
     keywords = [
         "Home Assistant",
         "Academic",
+        "Web server",
     ]
     classifiers = [
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.13",
     ]
     dependencies = [
-        
+        "Django >= 5.2",
     ]
     requires-python = ">=3.13"
 

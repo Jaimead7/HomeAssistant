@@ -1,1 +1,0 @@
-jaimead7-pyutils >= 0.0.12
