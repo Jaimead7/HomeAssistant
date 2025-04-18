@@ -1,7 +1,7 @@
 [project]
-    name = "jaimead7-home-assistant"
+    name = "jaimead7-home-assistant-api-gateway"
     version = "0.0.1"
-    description = "Home assistant project with learning purposes."
+    description = "Api Gateway for the Home Assistant project."
     authors = [
         {name = "Jaimead7", email = "alvarez.diaz.jaime1@gmail.com"},
     ]
@@ -16,6 +16,7 @@
     keywords = [
         "Home Assistant",
         "Academic",
+        "API Gateway",
     ]
     classifiers = [
         "License :: OSI Approved :: MIT License",

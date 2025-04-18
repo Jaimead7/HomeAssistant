@@ -1,7 +1,7 @@
 [project]
-    name = "jaimead7-home-assistant"
+    name = "jaimead7-weather-api"
     version = "0.0.1"
-    description = "Home assistant project with learning purposes."
+    description = "An API for weather information."
     authors = [
         {name = "Jaimead7", email = "alvarez.diaz.jaime1@gmail.com"},
     ]
@@ -14,15 +14,16 @@
         "LICENSE",
     ]
     keywords = [
-        "Home Assistant",
         "Academic",
+        "API",
+        "Weather",
     ]
     classifiers = [
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.13",
     ]
     dependencies = [
-        
+        "fastapi >= 0.115.12"
     ]
     requires-python = ">=3.13"
 
