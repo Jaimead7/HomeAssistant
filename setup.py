@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from pyUtils import ConfigFileManager
-from setuptools import find_packages, setup
+from setuptools import setup
 
-with open('README.md', 'r') as f:
-    longDescription: str = f.read()
 configFilePath: str = Path(__file__).parent / 'dist' / 'config' / 'config.toml'
 config = ConfigFileManager(configFilePath)
 with open('requirements.txt') as f:
     requirements: list = [line.replace('\n', '')
                           for line in f.readlines()
                           if line != '\n']
+with open('README.md', 'r') as f:
+    longDescription: str = f.read()
 
 
 setup(
@@ -24,7 +24,7 @@ setup(
     url= 'https://github.com/Jaimead7/HomeAssistant',
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.13',
     ],
     license= 'MIT',
     install_requires= requirements,
